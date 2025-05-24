@@ -1,0 +1,112 @@
+/* Modern dark gray and white color scheme */
+
+:root {
+    --primary-bg: #181a1b;
+    --secondary-bg: #23272a;
+    --accent: #6366f1;
+    --text-main: #f8f9fa;
+    --text-muted: #b0b3b8;
+    --header-bg: #23272a;
+    --nav-link: #a5b4fc;
+    --nav-link-hover: #6366f1;
+    --card-shadow: 0 4px 24px rgba(0, 0, 0, 0.25);
+    --border-radius: 12px;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--primary-bg);
+    color: var(--text-main);
+    line-height: 1.7;
+}
+
+header {
+    background: var(--header-bg);
+    color: var(--text-main);
+    padding: 32px 0 16px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+h1 {
+    margin: 0 0 8px 0;
+    font-size: 2.5rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 32px;
+}
+
+nav a {
+    color: var(--nav-link);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1.1rem;
+    transition: color 0.2s;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+}
+
+nav a:hover,
+nav a:focus {
+    color: var(--nav-link-hover);
+    border-bottom: 2px solid var(--accent);
+}
+
+section {
+    max-width: 700px;
+    margin: 40px auto;
+    padding: 32px;
+    background: var(--secondary-bg);
+    border-radius: var(--border-radius);
+    box-shadow: var(--card-shadow);
+}
+
+h2 {
+    margin-top: 0;
+    font-size: 2rem;
+    color: var(--accent);
+    font-weight: 600;
+}
+
+ul {
+    padding-left: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 24px 0 16px 0;
+    background: var(--header-bg);
+    color: var(--text-muted);
+    font-size: 1rem;
+    margin-top: 40px;
+    box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.18);
+}
+
+@media (max-width: 800px) {
+    section {
+        margin: 24px 8px;
+        padding: 20px;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.3rem;
+    }
+    nav ul {
+        gap: 16px;
+    }
+}
