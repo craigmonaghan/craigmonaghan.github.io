@@ -2,7 +2,7 @@
 
 :root {
     --primary-bg: #181a1b;
-    --secondary-bg: #23272a;
+    /* --secondary-bg: #23272a; */
     --accent: #6366f1;
     --text-main: #f8f9fa;
     --text-muted: #b0b3b8;
@@ -14,24 +14,23 @@
 }
 
 body {
-    font-family: 'Segoe UI', Arial, sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--primary-bg);
     color: var(--text-main);
     line-height: 1.7;
+
+    background: #030608;
+
+    background-attachment: fixed;
+    background-size: cover;
+    background-position: center;
 }
 
-header {
-    background: var(--header-bg);
-    color: var(--text-main);
-    padding: 32px 0 16px 0;
-    text-align: center;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.18);
-    position: sticky;
-    top: 0;
-    z-index: 10;
-}
+
+
+
 
 h1 {
     margin: 0 0 8px 0;
@@ -43,9 +42,9 @@ h1 {
 nav ul {
     list-style: none;
     padding: 0;
-    margin: 0;
+    margin-left: 10px;
     display: flex;
-    justify-content: center;
+    justify-content: left;
     gap: 32px;
 }
 
@@ -95,17 +94,24 @@ footer {
     box-shadow: 0 -2px 8px rgba(0, 0, 0, 0.18);
 }
 
+a {
+    color: white;
+}
+
 @media (max-width: 800px) {
     section {
         margin: 24px 8px;
         padding: 20px;
     }
+
     h1 {
         font-size: 2rem;
     }
+
     h2 {
         font-size: 1.3rem;
     }
+
     nav ul {
         gap: 16px;
     }
