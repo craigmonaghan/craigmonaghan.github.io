@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio Website</title>
+    <title>DESIGN IS NOT MY PASSION</title>
     <link rel="stylesheet" href="styles/main.css" />
   </head>
 
@@ -11,13 +11,22 @@
     <header>
       <nav>
         <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
           <li>
             <a href="https://github.com/craigmonaghan" target="_blank"
-              >Github</a
-            >
+              ><img
+                id="gitHubIcon"
+                src="/src/images/github-mark-white.png"
+                alt="GitHub Icon"
+            /></a>
+          </li>
+          <li>
+            <a href="#about"><button class="nav-btn">About</button></a>
+          </li>
+          <li>
+            <a href="#projects"><button class="nav-btn">Projects</button></a>
+          </li>
+          <li>
+            <a href="#contact"><button class="nav-btn">Contact</button></a>
           </li>
         </ul>
       </nav>
@@ -56,16 +65,46 @@
 
     <section id="projects">
       <h2>My Projects</h2>
-      <p>Here are some of the projects I have worked on:</p>
-      <ul>
-        <li>Task/ToDo App</li>
-        <a href="https://github.com/craigmonaghan/task-app" target="_blank"
-          >GitHub</a
-        >
-
-        <li>Project 2</li>
-        <li>Project 3</li>
-      </ul>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img
+            src="images/firefox_rZSoOnRZRO.png"
+            alt="Screenshot of Todo App"
+          />
+          <h3>Task/Todo App</h3>
+          <p>A simple task/Todo manager built with JavaScript.</p>
+          <a href="https://github.com/craigmonaghan/task-app" target="_blank"
+            >View on GitHub</a
+          >
+        </div>
+        <div class="project-card">
+          <img
+            src="images/firefox_HDp31RYMEQ.png"
+            alt="Screenshot of Calculator App"
+          />
+          <h3>Calculator App</h3>
+          <p>A simple Calculator App.</p>
+          <a
+            href="https://github.com/craigmonaghan/calculator-app-main"
+            target="_blank"
+            >View on GitHub</a
+          >
+        </div>
+        <div class="project-card">
+          <img
+            src="images/firefox_JKifKVndwE.png"
+            alt="Screenshot of Rock Paper Scissors Game"
+          />
+          <h3>Rock Paper Scissors Game</h3>
+          <p>
+            Rock Paper Scissors built with JavaScript, HTML and CSS for Basic
+            styling.
+          </p>
+          <a href="https://github.com/craigmonaghan/RPS" target="_blank"
+            >View on GitHub</a
+          >
+        </div>
+      </div>
     </section>
 
     <section id="contact">
