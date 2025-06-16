@@ -155,11 +155,7 @@ p a:hover {
 .project-card a:hover {
   color: var(--nav-link-hover);
 }
-#logo {
-  max-width: 100%;
-  height: 90px;
-  width: 90px;
-}
+
 span {
   margin-top: auto;
   display: block;
