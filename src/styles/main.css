@@ -78,9 +78,7 @@ section {
   border-radius: var(--border-radius);
   box-shadow: var(--card-shadow);
 }
-section:hover {
-  border: solid;
-}
+
 ul {
   padding-left: 20px;
 }
@@ -156,11 +154,18 @@ p a:hover {
   color: var(--nav-link-hover);
 }
 
-span {
-  margin-top: auto;
-  display: block;
-  align-items: center;
+.scg-icons {
+  display: flex;
+  justify-content: center; /* or space-around / space-between if preferred */
+  gap: 10px; /* spacing between icons */
+  margin-top: 10px; /* space from content above */
 }
+
+.svg-icons svg {
+  width: 40px;
+  height: 40px;
+}
+
 @media (max-width: 800px) {
   section {
     margin: 24px 8px;
